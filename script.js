@@ -2,7 +2,7 @@ function validate(event) {
     var ema = document.getElementById("email").value;
     var valid = true;
   
-    var errEma = document.getElementById("errorEma");
+    var emailerror = document.getElementById("errorEma");
     var re = /^[^\s@]+@[^\s@]+$/;
   
     if (valid === true) {
