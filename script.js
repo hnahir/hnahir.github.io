@@ -3,40 +3,51 @@ function validate(event) {
     var valid = true;
   
     var emailerror = document.getElementById("errorEma");
+
     var re = /^[^\s@]+@[^\s@]+$/;
   
-    if (valid === true) {
-      if (re.test(ema)) {
+    if (valid === true) 
+    {
+      if (re.test(ema)) 
+      {
         errEma.innerText = "";
-      } else {
+      } else
+       {
         valid = false;
         errEma.innerText = " Must be a valid email";
       }
     }
   
-    if (valid === false) {
+    if (valid === false)
+     {
       event.preventDefault();
     }
   }
   
   "use strict";
   var optCheck = { 
-    init: function() {
+    init: function()
+     {
       this.applyConditionalRequired();
       this.bindUIActions();
     },
     
-    bindUIActions: function() {
+    bindUIActions: function()
+     {
       $("input[type='radio'], input[type='checkbox']").on("change", this.applyConditionalRequired);
     },
     
-    applyConditionalRequired: function() {
-      
-      $(".require-if-active").each(function() {
+    applyConditionalRequired: function()
+     {
+    
+      $(".require-if-active").each(function() 
+      {
         var el = $(this);
-        if ($(el.data("require-pair")).is(":checked")) {
+        if ($(el.data("require-pair")).is(":checked"))
+         {
           el.prop("required", true);
-        } else {
+        } else
+         {
           el.prop("required", false);
         }
       });

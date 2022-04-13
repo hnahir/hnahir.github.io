@@ -22,13 +22,18 @@
         <section>
             <h2 id="contactdet">Details</h2>
             <p id="contactdet"><span class="required">*</span> Cannot leave Empty</p>
+
             <form action="https://formspree.io/f/mayvybqa" method="POST" onsubmit="return validate(event)">
+
                 <fieldset id="Details">
-                    <label for="Name">
-                        Name<span class="required">*</span>
-                        <input type="text" name="name" id="name" autofocus maxlength="100" required
-                            placeholder="Enter your full name" />
+                    
+                    <label for="Name">Name<span class="required">*</span>
+
+                        <input type="text" name="name" id="name" autofocus maxlength="100" required placeholder="Enter your full name" />
+                        
                     </label>
+
+
                     <label for="email">
                         Email:<span class="required">* </span><span id="emailerror"></span>
                         <input type="text" name="email" id="email" autofocus size="80" required placeholder="xyz123@gmail.com" />
@@ -67,7 +72,9 @@
                             <label for="Comment">Comment:</label>
 
                             <div class="reveal-if-active">
+
                                 <label for="comment"></label>
+
                                 <textarea name="Comment" id="comment" cols="60" rows="5" maxlength="500"
                                     placeholder="Type" class="require-if-active"
                                     data-require-pair="#options"></textarea>
@@ -75,6 +82,7 @@
                         </div>
 
                         <div>
+
                             <input type="radio" name="option" id="option3">
                             <label for="Hiring">Hiring</label>
 
