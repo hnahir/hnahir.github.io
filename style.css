@@ -1,0 +1,251 @@
+body {
+    height: 980px;
+    background: linear-gradient(55deg, #034641 0%, #060346 51%, #4e031b 85%);
+  }
+
+  
+  img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  }
+  .information {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: aquamarine;
+  }
+  p,h1{
+      
+      margin: 14px;
+      padding: 00px;
+  }
+  
+ 
+  .buttons {
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 135px;
+    }
+
+button#resumebtn {
+    background-color: whitesmoke;
+    border: solid;
+    border-radius: 35px;
+    color: maroon;
+    padding: 16px;
+    font-size: 18px;
+    margin: 0px 5px;
+   }
+
+button#contactbtn {
+    background-color: whitesmoke;
+    border: solid;
+    border-radius: 35px;
+    color: maroon;
+    padding: 16px;
+    font-size: 18px;
+    margin: 0px 5px;
+}
+a.btns {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline overline dotted navy;
+    color: black;
+
+}
+
+#resumebtn:hover {
+    background-color: khaki;
+    color: black;
+
+}
+
+#contactbtn:hover {
+    background-color: khaki;
+    
+    color: black;
+}
+
+div.myinfo {
+    display: flex;
+    text-align: left;
+    padding-bottom: 50px;
+}
+
+section#aboutme {
+    flex: 4;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: wheat;
+}
+
+section#basicinfo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: wheat;
+}
+
+
+h2 {
+margin-left: 22px;
+    font-style:italic;
+}
+.tab{
+    display:contents;
+}
+.tab0{
+    display: inline-block;
+    margin-left: 12px;
+}
+.tab1{
+    display:inline-block;
+    margin-left: 60px;  
+}
+.tab2{
+    display:inline-block;
+    margin-top: 10px; 
+    margin-left: 44px;
+}
+
+.tab3{
+    display:inline-block;
+    margin-top: 10px; 
+    margin-left: 12px;  
+}
+
+.tab4{
+    display:inline-block;
+    margin-top: 10px;
+    margin-left: 33px;  
+}
+
+.tab5{
+    display:inline-block;
+    margin-top: 10px;  
+    margin-left: 30px;  
+}
+
+.tab6{
+    display:inline-block;
+    margin-top: 10px;  
+    margin-left: 4px;  
+}
+
+.tab7{
+    display:inline-block;
+    margin-top: 10px;  
+    margin-left: 7px;  
+}
+
+section#edu {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Martel', serif;
+    font-weight: 400;
+    color: wheat;
+}
+
+div.college {
+    display:inline-flex;
+    padding-bottom: 00px;
+    border: solid plum;
+}
+h1#educ{
+    color: rgb(245, 186, 108);
+    text-align: center;
+}
+
+section#clg {
+    flex: 1;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:antiquewhite;
+    font-weight: 0;
+    background-color: #c05503;
+}
+
+section#clg2 {
+    flex: 1;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2#infoname {
+    font-family: 'Martel', serif;
+    font-weight: 400;
+    color: antiquewhite;
+}
+
+h3#collegename {
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: antiquewhite;
+    margin-top: 50px;
+}
+
+div.education{
+    padding-bottom: 50px;
+}
+
+div.head1{
+    color: antiquewhite;
+ 
+}
+
+.required {
+    color: red;
+}
+
+#errorEma {
+    color: red;
+    display: inline-block;
+}
+
+#Details {
+    display: grid;
+    color: azure;
+}
+
+.reveal-if-active {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    font-size: 16px;
+    transform: scale(0.8);
+    transition: 0.5s;
+}
+
+.reveal-if-active label {
+    display: block;
+    margin: 0 0 3px 0;
+}
+
+.reveal-if-active input[type=text] {
+    width: 100%;
+}
+
+input[type=radio]:checked~.reveal-if-active,
+input[type=checkbox]:checked~.reveal-if-active {
+    opacity: 1;
+    max-height: 100px;
+    padding: 10px 20px;
+    transform: scale(1);
+    overflow: visible;
+}
+
+h2#contactdet{
+    color: antiquewhite;
+}
+p#contactdet{
+    color: antiquewhite;
+}
+
+form{
+    border-style: outset;
+}
+
+.backlink{
+    text-align: left;
+    
+}
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html id="contact">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="head1">
+        <header id="heading">
+            <div class="name">Henil Ahir</div>
+            <div class="backlink">
+                <a href="index.html">HOME</a>
+            </div>
+        </header>
+    </div>
+
+    <div class="contact">
+        <section>
+            <h2 id="contactdet">Details</h2>
+            <p id="contactdet"><span class="required">*</span> Cannot leave Empty</p>
+            <form action="https://formspree.io/f/mayvybqa" method="POST" onsubmit="return validate(event)">
+                <fieldset id="Details">
+                    <label for="Name">
+                        Name<span class="required">*</span>
+                        <input type="text" name="name" id="name" autofocus maxlength="100" required
+                            placeholder="Enter your full name" />
+                    </label>
+                    <label for="email">
+                        Email:<span class="required">* </span><span id="errorEma"></span>
+                        <input type="text" name="email" id="email" autofocus size="80" required placeholder="xyz123@gmail.com" />
+                    </label>
+                    <label for="address">
+                        Address:<span class="required">*</span>
+                        <input type="text" name="address" id="address" autofocus size="80" required
+                            placeholder="1 Queens Road" />
+                    </label>
+                    <label for="city">
+                        City:<span class="required">*</span>
+                        <input type="text" name="city" id="city" size="50" autofocus required placeholder="Toronto" />
+                    </label>
+                    <label for="postal">
+                        Postal Code:<span class="required">*</span>
+                        <input type="text" name="postal" id="postal" autofocus size="50"
+                            pattern="^(?!.*[DFIOQU])[A-VXY][0-9][A-Z] ?[0-9][A-Z][0-9]$" required
+                            placeholder="M2X 5B7" />
+                    </label>
+                    <div>
+                        <label for="Type">Options:</label>
+                        <div>
+                            <input type="radio" name="option" id="option1" required>
+                            <label for="Question">Question:</label>
+
+                            <div class="reveal-if-active">
+                                <label for="question"></label>
+                                <textarea name="Question" id="question" cols="60" rows="5" maxlength="500"
+                                    placeholder="Type" class="require-if-active"
+                                    data-require-pair="#options"></textarea>
+                            </div>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="option" id="option2">
+                            <label for="Comment">Comment:</label>
+
+                            <div class="reveal-if-active">
+                                <label for="comment"></label>
+                                <textarea name="Comment" id="comment" cols="60" rows="5" maxlength="500"
+                                    placeholder="Type" class="require-if-active"
+                                    data-require-pair="#options"></textarea>
+                            </div>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="option" id="option3">
+                            <label for="Hiring">Hiring</label>
+
+                            <div class="reveal-if-active">
+                                <label for="hiring">Hourly Rate: $</label>
+                                <input type="number" name="Hourly rate" id="rate" autofocus min="0" step="0.25"
+                                    placeholder="Hourly Rate" class="require-if-active" data-require-pair="#options" />
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <br>
+                <input type="submit" value="Submit" />
+            </form>
+        </section>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
